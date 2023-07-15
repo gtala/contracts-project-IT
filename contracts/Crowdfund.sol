@@ -8,14 +8,17 @@ contract Crowdfund is Ownable {
     struct Capania {
         uint fechaIncio;
         uint fechaFin;
-        uint nombre;
-        uint beneficiario;
+        string nombre;
+        address beneficiario;
     }
 
 
     Capania camapnia;
 
-    constructor(Capania memory _camapnia) onlyOwner {
+    constructor(uint fechaIncio,
+        uint fechaFin,
+        string memory nombre,
+        address beneficiario) onlyOwner {
 
     }
 
